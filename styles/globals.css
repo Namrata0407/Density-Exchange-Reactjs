@@ -105,3 +105,44 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/* Define the slide-in animation */
+.slide{
+  animation-name: slider;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+  animation-timing-function: linear;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(-100);
+  }
+}
+
+
+/* Point Slider */
+.point-slider {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red; /* You can change the color */
+  position: relative;
+  animation-name: point-slider-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes point-slider-animation {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(calc(4 * 70px)); /* Adjust based on the number of slide boxes */
+  }
+}

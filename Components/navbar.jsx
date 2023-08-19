@@ -15,7 +15,6 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -28,10 +27,10 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box >
+    <Box>
       <Flex
         bg={useColorModeValue("white")}
-        color={useColorModeValue( "white")}
+        color={useColorModeValue("white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -42,7 +41,6 @@ export default function Navbar() {
         align={"center"}
         // border={"2px solid green"}
         padding={"20px"}
-        
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -59,19 +57,17 @@ export default function Navbar() {
           />
         </Flex>
 
-        <Flex
-          display={{ base: "none", md: "flex" }}
-          ml={0}
-        >
+        <Flex display={{ base: "none", md: "flex" }} ml={0}>
           <DesktopNav />
         </Flex>
 
-        <Text color={"#0d0c22"}
-        fontSize={"20px"}
-        fontFamily={"Haas Grot Text R Web"}
+        <Text
+          color={"#0d0c22"}
+          fontSize={"20px"}
+          fontFamily={"Haas Grot Text R Web"}
         >
           𝓭𝓻𝓲𝓫𝓫𝓫𝓵𝓮
-          </Text>
+        </Text>
 
         <Stack
           flex={{ base: 1, md: 0 }}
@@ -305,5 +301,5 @@ const NAV_ITEMS = [
   {
     label: "Go Pro",
     href: "/pageNotFound",
-  }
+  },
 ];
