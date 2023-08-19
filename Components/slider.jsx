@@ -19,11 +19,11 @@ const Slider = () => {
   return (
     <>
       <Box
-        border={"2px solid red"}
         width={"60%"}
         margin={"auto"}
-        mt={"30px"}
+        mt={"40px"}
         position="relative"
+
       >
         <VisibilitySensor onChange={(isVisible) => setIsVisible(isVisible)}>
           {() => (
@@ -62,7 +62,6 @@ const Slider = () => {
       </Box>
 
       <Flex
-        border={"5px solid black"}
         margin={"auto"}
         width={"70%"}
         mt={"60px"}
@@ -116,7 +115,7 @@ const Slider = () => {
         <motion.div
           variants={boxVariants}
           initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
+          // animate={isVisible ? "visible" : "hidden"}
           animate={isVisible ? "raised" : "null"}
           // whileHover="raised"
         >

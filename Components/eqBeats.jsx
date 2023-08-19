@@ -4,9 +4,9 @@ const EQbeats = () => {
     <div>
       <Flex
         width={"60%"}
-        border={"2px solid red"}
         margin={"auto"}
         justifyContent={"space-evenly"}
+        mt={"35px"}
       >
         <Box
           w={"30%"}

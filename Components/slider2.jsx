@@ -32,11 +32,11 @@ const Silder2 = () => {
   return (
     <div>
       <Box
-        border={"2px solid red"}
         width={"60%"}
         margin={"auto"}
         mb={"30px"}
         position="relative"
+        mt={"45px"}
       >
         <VisibilitySensor onChange={(isVisible) => setIsVisible(isVisible)}>
           {() => (
@@ -50,7 +50,7 @@ const Silder2 = () => {
                 transition={{ duration: 0.8 }}
                 style={{ position: "relative", left: 0 }}
               >
-                <Text>Wrong with self improvement & how we're fixing it.</Text>
+                <Text>Wrong with self improvement & how we are fixing it.</Text>
                 <Heading>Self-Improvement. Ugh.</Heading>
               </motion.div>
 

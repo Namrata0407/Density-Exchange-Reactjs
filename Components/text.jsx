@@ -5,7 +5,6 @@ const TextMessage = () => {
     <Flex justifyContent={["left", "left", "left", "center", "center"]}>
       <Box
         width={["100%", "100%", "100%", "48%", "48%"]}
-        border={"2px solid red"}
         padding={"15px"}
       >
         <Text fontSize={"20px"} lineHeight={"32px"} color={"black"} mb={"17px"}>
@@ -13,7 +12,7 @@ const TextMessage = () => {
         </Text>
 
         <Text fontSize={"20px"} lineHeight={"32px"} color={"black"} mb={"17px"}>
-          I've decided to make a redesign and animation for the Ahead app.
+          I have decided to make a redesign and animation for the Ahead app.
           Please review and happy to read your feedback!
         </Text>
 

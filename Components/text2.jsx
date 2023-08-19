@@ -4,9 +4,10 @@ const Text2Message = () => {
     <div>
       <Flex
         width={"60%"}
-        border={"2px solid red"}
         margin={"auto"}
         justifyContent={"space-evenly"}
+        mt={"45px"}
+        padding={"10px"}
       >
         <Box w={"30%"}>
           <Text
