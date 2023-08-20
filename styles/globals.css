@@ -106,6 +106,113 @@ a {
   }
 }
 
+/* for inner div */
+
+.rotating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 700px;
+  background-color: #edebfd;
+}
+
+.rotating-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  transform-origin: center;
+  margin-bottom: 70px;
+}
+
+.active {
+  animation: rotate .5s linear 1 forwards;
+}
+
+.red {
+  background-color: #edebfd;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.changing-width-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.changing-width-box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  transition: width 1s;
+}
+
+
+.animate {
+  width: 110%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  transition: height 1s ease, width 1s ease;
+}
+
+.resizable-div {
+  width: 200px;
+  height: 200px;
+  background-color: #e2dbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 1s ease, height 1s ease;
+  border-radius: 50%;
+}
+
+.container.expanded {
+  height: 330px;
+}
+
+.container.expanded .resizable-div {
+  width: 310px;
+  height: 310px;
+}
+
+.rotate{
+  animation-name: rotateAnimation;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
 
 /* Define the slide-in animation */
 .slide{
@@ -146,3 +253,78 @@ a {
     transform: translateY(calc(4 * 70px)); /* Adjust based on the number of slide boxes */
   }
 }
+
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.heading-animation {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromInside {
+  0% {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-in {
+  animation: slideInFromInside 1s ease-out forwards;
+}
+

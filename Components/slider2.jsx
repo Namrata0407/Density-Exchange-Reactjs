@@ -36,7 +36,7 @@ const Silder2 = () => {
         margin={"auto"}
         mb={"30px"}
         position="relative"
-        mt={"45px"}
+        mt={"55px"}
       >
         <VisibilitySensor onChange={(isVisible) => setIsVisible(isVisible)}>
           {() => (

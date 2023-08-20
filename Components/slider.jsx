@@ -21,7 +21,7 @@ const Slider = () => {
       <Box
         width={"60%"}
         margin={"auto"}
-        mt={"40px"}
+        mt={"55px"}
         position="relative"
 
       >

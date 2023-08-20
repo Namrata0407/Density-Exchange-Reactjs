@@ -6,7 +6,7 @@ const EQbeats = () => {
         width={"60%"}
         margin={"auto"}
         justifyContent={"space-evenly"}
-        mt={"35px"}
+        mt={"55px"}
       >
         <Box
           w={"30%"}

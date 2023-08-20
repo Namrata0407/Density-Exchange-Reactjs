@@ -6,7 +6,7 @@ const Text2Message = () => {
         width={"60%"}
         margin={"auto"}
         justifyContent={"space-evenly"}
-        mt={"45px"}
+        mt={"55px"}
         padding={"10px"}
       >
         <Box w={"30%"}>
